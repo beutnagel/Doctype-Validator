@@ -1,0 +1,24 @@
+{
+    "name": "beutnagel/doctype-validator",
+    "type": "library",
+    "description": "Check for valid W3C compliant DOCTYPEs",
+    "keywords": ["doctype","w3c","HTML","validation","validator"],
+    "homepage": "https://github.com/beutnagel/Doctype-Validator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jarne W. Beutnagel",
+            "email": "jarne@beutnagel.dk",
+            "homepage": "http://beutnagel.dk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Monolog": "src"
+        }
+    }
+}
