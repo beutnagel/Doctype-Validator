@@ -101,8 +101,25 @@ XHTML-Print 1.0:
 XHTML Basic 1.0:
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">
 
-XHTML Mobile Profile 1.2:
-<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+**XHTML Mobile Profile (XHTML-MP):**
+
+`<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">`
+
+`<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.1//EN"
+"http://www.openmobilealliance.org/tech/DTD/xhtml-mobile11.dtd">`
+
+`<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN"
+"http://www.wapforum.org/DTD/xhtml-mobile10.dtd">`
+
+XHTML Mobile Profile was a markup specification targeted towards "microbrowsers" on early mobile devices (2000). XHTML MP was built on top of XHTML-basic, a subset of XHTML 1.0 by W3C.
+
+###### (sources: http://www.passani.it/gap/ and http://technical.openmobilealliance.org/tech/affiliates/wap/wap-277-xhtmlmp-20011029-a.pdf)
+
+
+
+
+
+
 
 HTML 4.01+Aria 1.0:
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML+ARIA 1.0//EN" "http://www.w3.org/WAI/ARIA/schemata/html4-aria-1.dtd">
@@ -134,11 +151,24 @@ HTML 4.0 Loose:
 HTML 4.0 Frameset:
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN" "http://www.w3.org/TR/REC-html40/frameset.dtd">
 
-ISO/IEC 15445:
-<!DOCTYPE html PUBLIC "ISO/IEC 15445:2000//DTD HTML//EN">
 
-ISO/IEC 15445 (alternative):
-<!DOCTYPE html PUBLIC "ISO/IEC 15445:2000//DTD HyperText Markup Language//EN">
+**ISO/IEC 15445:**
+
+`<!DOCTYPE html PUBLIC "ISO/IEC 15445:2000//DTD HTML//EN">`
+
+*Or the alternative long form*
+
+`<!DOCTYPE html PUBLIC "ISO/IEC 15445:2000//DTD HyperText Markup Language//EN">`
+
+Also known as "ISO HTML", was published in May 2000 as an ISO/IEC international standard. In the ISO this standard falls in the domain of the ISO/IEC JTC1/SC34 (ISO/IEC Joint Technical Committee 1, Subcommittee 34 – Document description and processing languages). 
+
+###### (source: https://www.cs.tcd.ie/misc/15445/15445.HTML)
+
+
+
+
+
+
 
 HTML 3.2:
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
