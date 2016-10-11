@@ -102,7 +102,7 @@ XHTML Basic 1.0:
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">
 
 **XHTML Mobile Profile (XHTML-MP):**
-
+*XHTML Mobile Profile was a markup specification targeted towards "microbrowsers" on early mobile devices released by Open Mobile Alliance in 2000. XHTML MP was built on top of XHTML-basic, a subset of XHTML 1.0 by W3C.*
 `<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">`
 
 `<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.1//EN"
@@ -111,9 +111,10 @@ XHTML Basic 1.0:
 `<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN"
 "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">`
 
-XHTML Mobile Profile was a markup specification targeted towards "microbrowsers" on early mobile devices (2000). XHTML MP was built on top of XHTML-basic, a subset of XHTML 1.0 by W3C.
 
-###### (sources: http://www.passani.it/gap/ and http://technical.openmobilealliance.org/tech/affiliates/wap/wap-277-xhtmlmp-20011029-a.pdf)
+
+###### (sources: [Open Alliance Specification](http://technical.openmobilealliance.org/tech/affiliates/wap/wap-277-xhtmlmp-20011029-a.pdf) and [Authoring Guide](http://www.passani.it/gap/))
+
 
 
 
