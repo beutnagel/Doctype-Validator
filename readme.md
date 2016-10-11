@@ -98,11 +98,25 @@ XHTML 1.0 Frameset:
 XHTML-Print 1.0:
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML-Print 1.0//EN" "http://www.w3.org/TR/xhtml-print/xhtml-print10.dtd">
 
-XHTML Basic 1.0:
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">
+**XHTML Basic**
+
+*XHTML Basic is an XML-based structured markup language primarily used for simple (mainly handheld) user agents, typically mobile devices.*
+
+*XHTML Basic is a subset of XHTML 1.1, defined using XHTML Modularization including a reduced set of modules for document structure, images, forms, basic tables, and object support.*
+
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">`
+
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">`
+
+
+###### (sources [W3C XHTML Basic](https://www.w3.org/TR/xhtml-basic/))
+
 
 **XHTML Mobile Profile (XHTML-MP):**
+
 *XHTML Mobile Profile was a markup specification targeted towards "microbrowsers" on early mobile devices released by Open Mobile Alliance in 2000. XHTML MP was built on top of XHTML-basic, a subset of XHTML 1.0 by W3C.*
+
 `<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">`
 
 `<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.1//EN"
