@@ -166,7 +166,7 @@ A DOCTYPE must consist of the following components, in this order:
 5. Zero or more space characters.
 6. A ">" (U+003E) character.
 
-###### https://www.w3.org/TR/html5/syntax.html#the-doctype
+###### (source: https://www.w3.org/TR/html5/syntax.html#the-doctype)
 
 ## Sites for testing:
 * http://solefest.com/   		(doctype comes after other content)
