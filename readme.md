@@ -22,6 +22,7 @@ Documents that are both written to be interpreted as HTML and XHTML are known as
 
 ### The HTML5 legacy compatibility DOCTYPE declaration.
 `<!DOCTYPE html SYSTEM "about:legacy-compat">
+
 <!DOCTYPE html SYSTEM 'about:legacy-compat'>`
 
 ### Quotation marks
@@ -39,11 +40,14 @@ For XHTML you may use a custom DOCTYPE.
 These are considered conforming, but obsolete in HTML.
 Authors are strongly discouraged from using these DOCTYPEs.
 
-Public identifier only DOCTYPEs
+**Public identifier only DOCTYPEs**
+
 `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">`
 
-Public and system identifiers
+**Public and system identifiers**
+
 `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN"
     SYSTEM "http://www.w3.org/TR/REC-html40/strict.dtd">
 
