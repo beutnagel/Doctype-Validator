@@ -4,7 +4,7 @@ namespace Beutnagel\Doctype_Validator;
 /**
 * 
 */
-class Doctype_Validator 
+class Validator 
 {
 	
 	public function __construct()
