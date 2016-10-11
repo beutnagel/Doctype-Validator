@@ -4,11 +4,11 @@ namespace Beutnagel\Doctype_Validator;
 /**
 * 
 */
-class Doctype_Validator 
+class Result 
 {
 	
 	public function __construct()
 	{
-		echo "validator called";
+		echo "result called";
 	}
 }
