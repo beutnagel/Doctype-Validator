@@ -14,6 +14,33 @@ Documents that are both written to be interpreted as HTML and XHTML are known as
 * https://dev.w3.org/html5/html-author/
 * https://www.w3.org/TR/html5/syntax.html#the-doctype
 
+## List of DOCTYPEs accepted by the W3C validator
+* HTML5
+* XHTML 1.0 Strict
+* XHTML 1.0 Transitional
+* XHTML 1.0 Frameset
+* HTML 4.01 Strict
+* HTML 4.01 Transitional
+* HTML 4.01 Frameset
+* HTML 4.01 + RDFa 1.1
+* HTML 3.2
+* HTML 2.0
+* ISO/IEC 15445:2000 ("ISO HTML")
+* XHTML 1.1
+* XHTML + RDFa
+* XHTML Basic 1.0
+* XHTML Basic 1.1
+* XHTML Mobile Profile 1.2
+* XHTML-Print 1.0
+* XHTML 1.1 plus MathML 2.0
+* XHTML 1.1 plus MathML 2.0 plus SVG 1.1
+* MathML 2.0
+* SVG 1.0
+* SVG 1.1
+* SVG 1.1 Tiny
+* SVG 1.1 Basic
+* SMIL 1.0
+* SMIL 2.0
 
 ## HTML Doctype
 ### The HTML5 DOCTYPE declaration.
@@ -65,20 +92,55 @@ Authors are strongly discouraged from using these DOCTYPEs.
 ## List of Doctypes (incl. non-W3C)
 Source: https://www.totalvalidator.com/support/doctypes.html
 
-(X)HTML5:
-<!DOCTYPE html>
 
-(X)HTML5 (alternative):
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+**(X)HTML + Aria**
 
-XHTML 1.1+Aria 1.0:
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+ARIA 1.0//EN" "http://www.w3.org/WAI/ARIA/schemata/xhtml-aria-1.dtd">
+*This DTD can be used to extend HTML and XHTML and adds the WAI-ARIA state and property attributes to all its elements.*
 
-XHTML 1.1+RDFa 1.1:
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">
+*Note: This is not a formal document type.*
 
-XHTML 1.1+RDFa 1.0:
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+ARIA 1.0//EN" "http://www.w3.org/WAI/ARIA/schemata/xhtml-aria-1.dtd">`
+
+`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+ARIA 1.0//EN" "http://www.w3.org/WAI/ARIA/schemata/html4-aria-1.dtd">`
+    
+* Status: 
+* Obsolete: false
+* Optional: true
+* Alternatives: HTML5
+
+
+######(source: [W3C XHTML+WAI-ARIA](https://www.w3.org/TR/wai-aria/appendices))
+
+**XHTML + RDFa**
+*XHTML + RDFa extends the XHTML markup language with the attributes defined in RDFa Core
+
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">`
+
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">`
+
+* Status: Recommendation
+* Obsolete: false
+
+######(source: [W3C XHTML+RDFa](https://www.w3.org/TR/xhtml-rdfa/))
+
+**HTML + RDFa**
+*HTML + RDFa extends the HTML markup language with the attributes defined in RDFa Core
+
+HTML 4.01+RDFa 1.1:
+`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-1.dtd">`
+
+HTML 4.01+RDFa Lite 1.1:
+`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa Lite 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfalite11-1.dtd">`
+
+HTML 4.01+RDFa 1.0:
+`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa-1.dtd">`
+
+
+* Status: Recommendation
+* Obsolete: false
+* Alternatives: HTML5
+
+######(source: [W3C HTML+RDFa](https://www.w3.org/TR/html-rdfa/))
 
 XHTML 1.1:
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -95,8 +157,21 @@ XHTML 1.0 Loose:
 XHTML 1.0 Frameset:
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
 
-XHTML-Print 1.0:
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML-Print 1.0//EN" "http://www.w3.org/TR/xhtml-print/xhtml-print10.dtd">
+**XHTML-Print**
+
+*XHTML-Print is designed as a simple XHTML based data stream suitable for printing as well as display. It is based on XHTML Basic. Its targeted usage is for printing in environments where it is not feasible or desirable to install a printer-specific driver and where some variability in the formatting of the output is acceptable.*
+
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML-Print 1.0//EN" "http://www.w3.org/TR/xhtml-print/xhtml-print10.dtd">`
+
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML-Print 1.0//EN"
+"http://www.w3.org/MarkUp/DTD/xhtml-print10.dtd">`
+
+######(source: [W3C XHTML-Print](https://www.w3.org/TR/xhtml-print/))
+
+* Status: Recommendation
+* Obsolete: false
+
+
 
 **XHTML Basic**
 
@@ -106,6 +181,8 @@ XHTML-Print 1.0:
 
 `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
 "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">`
+
+*(previous version)*
 
 `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">`
 
@@ -139,14 +216,6 @@ XHTML-Print 1.0:
 HTML 4.01+Aria 1.0:
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML+ARIA 1.0//EN" "http://www.w3.org/WAI/ARIA/schemata/html4-aria-1.dtd">
 
-HTML 4.01+RDFa 1.1:
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-1.dtd">
-
-HTML 4.01+RDFa Lite 1.1:
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa Lite 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfalite11-1.dtd">
-
-HTML 4.01+RDFa 1.0:
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa-1.dtd">
 
 HTML 4.01 Strict:
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -166,6 +235,17 @@ HTML 4.0 Loose:
 HTML 4.0 Frameset:
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN" "http://www.w3.org/TR/REC-html40/frameset.dtd">
 
+**XHTML + MathML + SVG**
+
+
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">`
+
+* Status: Retired
+* Obsolete: true
+* Released: 2002
+
+###### (Source: [W3C An XHTML + MathML + SVG Profile](https://www.w3.org/TR/XHTMLplusMathMLplusSVG/))
+
 
 **ISO/IEC 15445:**
 
@@ -179,6 +259,12 @@ Also known as "ISO HTML", was published in May 2000 as an ISO/IEC international 
 
 ###### (source: https://www.cs.tcd.ie/misc/15445/15445.HTML)
 
+
+
+**SMIL 3.0**
+(https://www.w3.org/TR/SMIL3/)
+
+Note: List of DTDs and modules here: https://www.w3.org/TR/SMIL3/smil-modules.html#smilModulesNSDTDCreation
 
 
 
