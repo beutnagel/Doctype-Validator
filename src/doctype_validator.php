@@ -1,10 +1,10 @@
 <?php
-namespace Beutnagel\Doctype_Validator;
+namespace Beutnagel;
 
 /**
 * 
 */
-class Validator 
+class Doctype_Validator 
 {
 	
 	public function __construct()
