@@ -1,46 +1,79 @@
 <?php
 namespace Beutnagel;
 
+    /*
+    |--------------------------------------------------------------------------
+    | Doctype Validator
+    |--------------------------------------------------------------------------
+    |
+    | Description of this class....
+    |
+    */
 /**
-* 
-*/
-class Doctype_Validator 
+ * Class Doctype_Validator
+ * @package Beutnagel
+ */
+
+class Doctype_Validator
 {
-	
+
+	/**
+	 * Doctype_Validator constructor.
+     */
 	public function __construct()
 	{
 		echo "validator was initiated";
 	}
 
 
-
+	/**
+	 * @param $subject
+     */
 	public function validate($subject) {
 
 	}
 
+	/**
+	 * @param $subject
+     */
 	public function validateString($subject) {
 
 	}
 
+	/**
+	 * @param $subject
+     */
 	public function validateUrl($subject) {
 
 	}
 
+	/**
+	 * @param $subject
+     */
 	public function validateFile($subject) {
 
 	}
 
 	// e.g. "HTML5", "XHTML"
+	/**
+	 * @param $specification
+     */
 	public function setSpec($specification) {
 
 	}
 
+	/**
+	 * @param $specification
+	 * @param $subject
+     */
 	public function isValid($specification,$subject) {
 
 	}
 
 
-
+	/**
+	 * @param $subject
+     */
 	public function analyse($subject)
 	{
 		/* dissect the DTD
@@ -53,8 +86,25 @@ class Doctype_Validator
 		 */
 
 	}
-	
 
+    /**
+     * Find the best guess for the doctype by examining each character
+     * one by one with the existing doctypes.
+     *
+     *
+     */
+    private function bestGuess()
+    {
+
+    }
+
+
+
+
+
+	/**
+	 * @param $fpi
+     */
 	private function analyseFPI($fpi) {
 		$fpi = explode("//", $fpi);
 		// count($fpi) should be === 4 parts
@@ -82,6 +132,9 @@ class Doctype_Validator
 
 // TODO: Check which SIs are optional
 // list of valid doctypes
+	/**
+	 * @var array
+     */
 	private $doctypes = [
 		"HTML5" => [
 			"root_element" 	=> "html",
@@ -430,13 +483,19 @@ class Doctype_Validator
 */
 	];
 
+	/**
+	 * @return array
+     */
 	public function getDoctypes() {
 		return $this->doctypes;
 	}
 
 // ISO 639-1 language codes array
 	// credit: https://gist.github.com/ddebin/4723054
-private $codes = [
+	/**
+	 * @var array
+     */
+	private $codes = [
 	'ab'=>'Abkhazian',
 	'aa'=>'Afar',
 	'af'=>'Afrikaans',
