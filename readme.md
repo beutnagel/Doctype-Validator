@@ -207,7 +207,19 @@ XHTML 1.0 Frameset:
 ###### (sources: [Open Alliance Specification](http://technical.openmobilealliance.org/tech/affiliates/wap/wap-277-xhtmlmp-20011029-a.pdf) and [Authoring Guide](http://www.passani.it/gap/))
 
 
+**WML 2.0**
+*Building on Openwave's HDML, Nokia's "Tagged Text Markup Language" (TTML) and Ericsson's proprietary markup language for mobile content, the WAP Forum created the WML 1.1 standard in 1998.[1] WML 2.0 was specified in 2001,[2] but has not been widely adopted. It was an attempt at bridging WML and XHTML Basic before the WAP 2.0 spec was finalized.[3] In the end, XHTML Mobile Profile became the markup language used in WAP 2.0. The newest WML version in active use is 1.3.*
 
+`<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD WML 2.0//EN" "http://www.wapforum.org/DTD/wml20.dtd">`
+
+`<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+   "http://www.wapforum.org/DTD/wml_1.1.xml" >`
+
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" "http://www.wapforum.org/DTD/wml13.dtd">
+
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+http://www.developershome.com/wap/wml/wml_tutorial.asp?page=doctypeDeclaration
 
 
 
