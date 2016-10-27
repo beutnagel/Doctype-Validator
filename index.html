@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Doctype-validator by beutnagel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Doctype-validator</h1>
+      <h2 class="project-tagline">Test to see if an HTML doctype is valid according to W3C specifications</h2>
+      <a href="https://github.com/beutnagel/Doctype-Validator" class="btn">View on GitHub</a>
+      <a href="https://github.com/beutnagel/Doctype-Validator/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/beutnagel/Doctype-Validator/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="doctype-validator" class="anchor" href="#doctype-validator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Doctype Validator</h1>
+
+<p>Test to see if an HTML doctype is valid according the W3C specifications.</p>
+
+<h2>
+<a id="when-is-the-doctype-required" class="anchor" href="#when-is-the-doctype-required" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>When is the DOCTYPE required?</h2>
+
+<p>For HTML documents the DOCTYPE is required.
+For XHTML it may be omitted.</p>
+
+<p>Documents that are both written to be interpreted as HTML and XHTML are known as polyglot markup documents. </p>
+
+<p><strong>Sources:</strong></p>
+
+<ul>
+<li><a href="https://dev.w3.org/html5/html-author/">https://dev.w3.org/html5/html-author/</a></li>
+<li><a href="https://www.w3.org/TR/html5/syntax.html#the-doctype">https://www.w3.org/TR/html5/syntax.html#the-doctype</a></li>
+</ul>
+
+<h2>
+<a id="list-of-doctypes-accepted-by-the-w3c-validator" class="anchor" href="#list-of-doctypes-accepted-by-the-w3c-validator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List of DOCTYPEs accepted by the W3C validator</h2>
+
+<ul>
+<li>HTML5</li>
+<li>XHTML 1.0 Strict</li>
+<li>XHTML 1.0 Transitional</li>
+<li>XHTML 1.0 Frameset</li>
+<li>HTML 4.01 Strict</li>
+<li>HTML 4.01 Transitional</li>
+<li>HTML 4.01 Frameset</li>
+<li>HTML 4.01 + RDFa 1.1</li>
+<li>HTML 3.2</li>
+<li>HTML 2.0</li>
+<li>ISO/IEC 15445:2000 ("ISO HTML")</li>
+<li>XHTML 1.1</li>
+<li>XHTML + RDFa</li>
+<li>XHTML Basic 1.0</li>
+<li>XHTML Basic 1.1</li>
+<li>XHTML Mobile Profile 1.2</li>
+<li>XHTML-Print 1.0</li>
+<li>XHTML 1.1 plus MathML 2.0</li>
+<li>XHTML 1.1 plus MathML 2.0 plus SVG 1.1</li>
+<li>MathML 2.0</li>
+<li>SVG 1.0</li>
+<li>SVG 1.1</li>
+<li>SVG 1.1 Tiny</li>
+<li>SVG 1.1 Basic</li>
+<li>SMIL 1.0</li>
+<li>SMIL 2.0</li>
+</ul>
+
+<h2>
+<a id="html-doctype" class="anchor" href="#html-doctype" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>HTML Doctype</h2>
+
+<h3>
+<a id="the-html5-doctype-declaration" class="anchor" href="#the-html5-doctype-declaration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The HTML5 DOCTYPE declaration.</h3>
+
+<p><code>&lt;!DOCTYPE html&gt;</code></p>
+
+<h3>
+<a id="the-html5-legacy-compatibility-doctype-declaration" class="anchor" href="#the-html5-legacy-compatibility-doctype-declaration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The HTML5 legacy compatibility DOCTYPE declaration.</h3>
+
+<p><code>&lt;!DOCTYPE html SYSTEM "about:legacy-compat"&gt;</code></p>
+
+<p><code>&lt;!DOCTYPE html SYSTEM 'about:legacy-compat'&gt;</code></p>
+
+<h3>
+<a id="quotation-marks" class="anchor" href="#quotation-marks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quotation marks</h3>
+
+<p>Both single '  and double " quotation marks are allowed.</p>
+
+<h3>
+<a id="case-sensitivity" class="anchor" href="#case-sensitivity" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Case sensitivity</h3>
+
+<p>In HTML only the quoted parts are case sensitive. </p>
+
+<h3>
+<a id="custom-doctypes" class="anchor" href="#custom-doctypes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Custom Doctypes</h3>
+
+<p>For XHTML you may use a custom DOCTYPE.</p>
+
+<h3>
+<a id="obsolete-but-permitted-doctypes" class="anchor" href="#obsolete-but-permitted-doctypes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Obsolete But Permitted DOCTYPEs</h3>
+
+<p>These are considered conforming, but obsolete in HTML.
+Authors are strongly discouraged from using these DOCTYPEs.</p>
+
+<p><strong>Public identifier only DOCTYPEs</strong></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN"&gt;</code></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"&gt;</code></p>
+
+<p><strong>Public and system identifiers</strong></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN"
+    SYSTEM "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;</code></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    SYSTEM "http://www.w3.org/TR/html4/strict.dtd"&gt;</code></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</code></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    SYSTEM "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</code></p>
+
+<h2>
+<a id="list-of-doctypes-incl-non-w3c" class="anchor" href="#list-of-doctypes-incl-non-w3c" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List of Doctypes (incl. non-W3C)</h2>
+
+<p>Source: <a href="https://www.totalvalidator.com/support/doctypes.html">https://www.totalvalidator.com/support/doctypes.html</a></p>
+
+<p><strong>(X)HTML + Aria</strong></p>
+
+<p><em>This DTD can be used to extend HTML and XHTML and adds the WAI-ARIA state and property attributes to all its elements.</em></p>
+
+<p><em>Note: This is not a formal document type.</em></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+ARIA 1.0//EN" "http://www.w3.org/WAI/ARIA/schemata/xhtml-aria-1.dtd"&gt;</code></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML+ARIA 1.0//EN" "http://www.w3.org/WAI/ARIA/schemata/html4-aria-1.dtd"&gt;</code></p>
+
+<ul>
+<li>Status: </li>
+<li>Obsolete: false</li>
+<li>Optional: true</li>
+<li>Alternatives: HTML5</li>
+</ul>
+
+<h6>
+<a id="source-w3c-xhtmlwai-aria" class="anchor" href="#source-w3c-xhtmlwai-aria" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(source: <a href="https://www.w3.org/TR/wai-aria/appendices">W3C XHTML+WAI-ARIA</a>)</h6>
+
+<p><strong>XHTML + RDFa</strong>
+*XHTML + RDFa extends the XHTML markup language with the attributes defined in RDFa Core</p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd"&gt;</code></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd"&gt;</code></p>
+
+<ul>
+<li>Status: Recommendation</li>
+<li>Obsolete: false</li>
+</ul>
+
+<h6>
+<a id="source-w3c-xhtmlrdfa" class="anchor" href="#source-w3c-xhtmlrdfa" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(source: <a href="https://www.w3.org/TR/xhtml-rdfa/">W3C XHTML+RDFa</a>)</h6>
+
+<p><strong>HTML + RDFa</strong>
+*HTML + RDFa extends the HTML markup language with the attributes defined in RDFa Core</p>
+
+<p>HTML 4.01+RDFa 1.1:
+<code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-1.dtd"&gt;</code></p>
+
+<p>HTML 4.01+RDFa Lite 1.1:
+<code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa Lite 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfalite11-1.dtd"&gt;</code></p>
+
+<p>HTML 4.01+RDFa 1.0:
+<code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa-1.dtd"&gt;</code></p>
+
+<ul>
+<li>Status: Recommendation</li>
+<li>Obsolete: false</li>
+<li>Alternatives: HTML5</li>
+</ul>
+
+<h6>
+<a id="source-w3c-htmlrdfa" class="anchor" href="#source-w3c-htmlrdfa" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(source: <a href="https://www.w3.org/TR/html-rdfa/">W3C HTML+RDFa</a>)</h6>
+
+<p>XHTML 1.1:
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "<a href="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd%22%3E">http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</a></p>
+
+<p>XHTML Basic 1.1:
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "<a href="http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd%22%3E">http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd"&gt;</a></p>
+
+<p>XHTML 1.0 Strict:
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd%22%3E">http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</a></p>
+
+<p>XHTML 1.0 Loose:
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd%22%3E">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</a></p>
+
+<p>XHTML 1.0 Frameset:
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd%22%3E">http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;</a></p>
+
+<p><strong>XHTML-Print</strong></p>
+
+<p><em>XHTML-Print is designed as a simple XHTML based data stream suitable for printing as well as display. It is based on XHTML Basic. Its targeted usage is for printing in environments where it is not feasible or desirable to install a printer-specific driver and where some variability in the formatting of the output is acceptable.</em></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML-Print 1.0//EN" "http://www.w3.org/TR/xhtml-print/xhtml-print10.dtd"&gt;</code></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML-Print 1.0//EN"
+"http://www.w3.org/MarkUp/DTD/xhtml-print10.dtd"&gt;</code></p>
+
+<h6>
+<a id="source-w3c-xhtml-print" class="anchor" href="#source-w3c-xhtml-print" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(source: <a href="https://www.w3.org/TR/xhtml-print/">W3C XHTML-Print</a>)</h6>
+
+<ul>
+<li>Status: Recommendation</li>
+<li>Obsolete: false</li>
+</ul>
+
+<p><strong>XHTML Basic</strong></p>
+
+<p><em>XHTML Basic is an XML-based structured markup language primarily used for simple (mainly handheld) user agents, typically mobile devices.</em></p>
+
+<p><em>XHTML Basic is a subset of XHTML 1.1, defined using XHTML Modularization including a reduced set of modules for document structure, images, forms, basic tables, and object support.</em></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd"&gt;</code></p>
+
+<p><em>(previous version)</em></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd"&gt;</code></p>
+
+<h6>
+<a id="sources-w3c-xhtml-basic" class="anchor" href="#sources-w3c-xhtml-basic" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(sources <a href="https://www.w3.org/TR/xhtml-basic/">W3C XHTML Basic</a>)</h6>
+
+<p><strong>XHTML Mobile Profile (XHTML-MP):</strong></p>
+
+<p><em>XHTML Mobile Profile was a markup specification targeted towards "microbrowsers" on early mobile devices released by Open Mobile Alliance in 2000. XHTML MP was built on top of XHTML-basic, a subset of XHTML 1.0 by W3C.</em></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd"&gt;</code></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.1//EN"
+"http://www.openmobilealliance.org/tech/DTD/xhtml-mobile11.dtd"&gt;</code></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN"
+"http://www.wapforum.org/DTD/xhtml-mobile10.dtd"&gt;</code></p>
+
+<h6>
+<a id="sources-open-alliance-specification-and-authoring-guide" class="anchor" href="#sources-open-alliance-specification-and-authoring-guide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(sources: <a href="http://technical.openmobilealliance.org/tech/affiliates/wap/wap-277-xhtmlmp-20011029-a.pdf">Open Alliance Specification</a> and <a href="http://www.passani.it/gap/">Authoring Guide</a>)</h6>
+
+<p><strong>WML 2.0</strong>
+<em>Building on Openwave's HDML, Nokia's "Tagged Text Markup Language" (TTML) and Ericsson's proprietary markup language for mobile content, the WAP Forum created the WML 1.1 standard in 1998.[1] WML 2.0 was specified in 2001,[2] but has not been widely adopted. It was an attempt at bridging WML and XHTML Basic before the WAP 2.0 spec was finalized.[3] In the end, XHTML Mobile Profile became the markup language used in WAP 2.0. The newest WML version in active use is 1.3.</em></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//WAPFORUM//DTD WML 2.0//EN" "http://www.wapforum.org/DTD/wml20.dtd"&gt;</code></p>
+
+<p><code>&lt;!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+   "http://www.wapforum.org/DTD/wml_1.1.xml" &gt;</code></p>
+
+<p>&lt;!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" "<a href="http://www.wapforum.org/DTD/wml13.dtd%22%3E">http://www.wapforum.org/DTD/wml13.dtd"&gt;</a></p>
+
+<p>&lt;!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "<a href="http://www.wapforum.org/DTD/wml12.dtd%22%3E">http://www.wapforum.org/DTD/wml12.dtd"&gt;</a></p>
+
+<p><a href="http://www.developershome.com/wap/wml/wml_tutorial.asp?page=doctypeDeclaration">http://www.developershome.com/wap/wml/wml_tutorial.asp?page=doctypeDeclaration</a></p>
+
+<p>HTML 4.01+Aria 1.0:
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML+ARIA 1.0//EN" "<a href="http://www.w3.org/WAI/ARIA/schemata/html4-aria-1.dtd%22%3E">http://www.w3.org/WAI/ARIA/schemata/html4-aria-1.dtd"&gt;</a></p>
+
+<p>HTML 4.01 Strict:
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "<a href="http://www.w3.org/TR/html4/strict.dtd%22%3E">http://www.w3.org/TR/html4/strict.dtd"&gt;</a></p>
+
+<p>HTML 4.01 Loose:
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "<a href="http://www.w3.org/TR/html4/loose.dtd%22%3E">http://www.w3.org/TR/html4/loose.dtd"&gt;</a></p>
+
+<p>HTML 4.01 Frameset:
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<a href="http://www.w3.org/TR/html4/frameset.dtd%22%3E">http://www.w3.org/TR/html4/frameset.dtd"&gt;</a></p>
+
+<p>HTML 4.0 Strict:
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "<a href="http://www.w3.org/TR/REC-html40/strict.dtd%22%3E">http://www.w3.org/TR/REC-html40/strict.dtd"&gt;</a></p>
+
+<p>HTML 4.0 Loose:
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "<a href="http://www.w3.org/TR/REC-html40/loose.dtd%22%3E">http://www.w3.org/TR/REC-html40/loose.dtd"&gt;</a></p>
+
+<p>HTML 4.0 Frameset:
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN" "<a href="http://www.w3.org/TR/REC-html40/frameset.dtd%22%3E">http://www.w3.org/TR/REC-html40/frameset.dtd"&gt;</a></p>
+
+<p><strong>XHTML + MathML + SVG</strong></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd"&gt;</code></p>
+
+<ul>
+<li>Status: Retired</li>
+<li>Obsolete: true</li>
+<li>Released: 2002</li>
+</ul>
+
+<h6>
+<a id="source-w3c-an-xhtml--mathml--svg-profile" class="anchor" href="#source-w3c-an-xhtml--mathml--svg-profile" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Source: <a href="https://www.w3.org/TR/XHTMLplusMathMLplusSVG/">W3C An XHTML + MathML + SVG Profile</a>)</h6>
+
+<p><strong>ISO/IEC 15445:</strong></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "ISO/IEC 15445:2000//DTD HTML//EN"&gt;</code></p>
+
+<p><em>Or the alternative long form</em></p>
+
+<p><code>&lt;!DOCTYPE html PUBLIC "ISO/IEC 15445:2000//DTD HyperText Markup Language//EN"&gt;</code></p>
+
+<p>Also known as "ISO HTML", was published in May 2000 as an ISO/IEC international standard. In the ISO this standard falls in the domain of the ISO/IEC JTC1/SC34 (ISO/IEC Joint Technical Committee 1, Subcommittee 34 – Document description and processing languages). </p>
+
+<h6>
+<a id="source-httpswwwcstcdiemisc1544515445html" class="anchor" href="#source-httpswwwcstcdiemisc1544515445html" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(source: <a href="https://www.cs.tcd.ie/misc/15445/15445.HTML">https://www.cs.tcd.ie/misc/15445/15445.HTML</a>)</h6>
+
+<p><strong>SMIL 3.0</strong>
+(<a href="https://www.w3.org/TR/SMIL3/">https://www.w3.org/TR/SMIL3/</a>)</p>
+
+<p>Note: List of DTDs and modules here: <a href="https://www.w3.org/TR/SMIL3/smil-modules.html#smilModulesNSDTDCreation">https://www.w3.org/TR/SMIL3/smil-modules.html#smilModulesNSDTDCreation</a></p>
+
+<p>HTML 3.2:
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;</p>
+
+<p>HTML 3.2 (alternative):
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"&gt;</p>
+
+<p>HTML 3.2 (alternative):
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Draft//EN"&gt;</p>
+
+<p>HTML 2.0:
+&lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"&gt;</p>
+
+<p>HTML 2.0 (alternative):
+&lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;</p>
+
+<h2>
+<a id="what-a-doctype-must-consist-of" class="anchor" href="#what-a-doctype-must-consist-of" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What a DOCTYPE must consist of</h2>
+
+<p>A DOCTYPE must consist of the following components, in this order:</p>
+
+<ol>
+<li>A string that is an ASCII case-insensitive match for the string "&lt;!DOCTYPE".</li>
+<li>One or more space characters.</li>
+<li>A string that is an ASCII case-insensitive match for the string "html".</li>
+<li>Optionally, a DOCTYPE legacy string or an obsolete permitted DOCTYPE string.</li>
+<li>Zero or more space characters.</li>
+<li>A "&gt;" (U+003E) character.</li>
+</ol>
+
+<h6>
+<a id="source-httpswwww3orgtrhtml5syntaxhtmlthe-doctype" class="anchor" href="#source-httpswwww3orgtrhtml5syntaxhtmlthe-doctype" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(source: <a href="https://www.w3.org/TR/html5/syntax.html#the-doctype">https://www.w3.org/TR/html5/syntax.html#the-doctype</a>)</h6>
+
+<h2>
+<a id="sites-for-testing" class="anchor" href="#sites-for-testing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sites for testing:</h2>
+
+<ul>
+<li>
+<a href="http://solefest.com/">http://solefest.com/</a>          (doctype comes after other content)</li>
+<li>
+<a href="http://autodetale.pl/">http://autodetale.pl/</a>         (legacy html5 doctype)</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/beutnagel/Doctype-Validator">Doctype-validator</a> is maintained by <a href="https://github.com/beutnagel">beutnagel</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
