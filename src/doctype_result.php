@@ -27,6 +27,11 @@ class Doctype_Result
 
     }
 
+
+
+
+
+
     /**
      * Automatically assign a result/value pair to the result object
      *
@@ -37,8 +42,9 @@ class Doctype_Result
      */
     public function setResult($result,$value)
     {
-        if(property_exists("Doctype_Result",$result)){
-           $this->$$result = $value;
+
+        if(property_exists("Beutnagel\Doctype_Result",$result)){
+            $this->$result = $value;
             return true;
         } else {
             return false;
@@ -46,36 +52,81 @@ class Doctype_Result
     }
 
 
+    private $fragments = array();
+
+
+
 	/**
 	 * Whether the result is an exact match for an existing public doctype.
 	 *
 	 * @var bool
 	 */
-	private $exact_match = false;
+	private $match = null;
 
     /**
 	 * @return boolean
 	 */
-	public function isExactMatch()
+	public function isMatch()
 	{
-		return $this->exact_match;
+		return $this->match;
 	}
 
 
+    /*
+    |--------------------------------------------------------------------------
+    | VALID
+    |--------------------------------------------------------------------------
+    */
 
-	/**
+
+    /**
      * Whether the result is a valid doctype, i.e. does it conform to the
      * structural definition of a doctype.
 	 * @var bool
      */
-	private $valid = false;
+	private $valid = null;
 
 	/**
 	 * @return boolean
      */
-	public function isValid() {
-		return $this->valid;
-	}
+    public function isValid() {
+        return $this->valid;
+    }
+    public function getValid() {
+        return $this->valid;
+    }
+    public function setValid($bool) {
+        if($bool === true) {
+            // only set valid to true if nothing has previously set it to false
+            if($this->valid !== false) {
+                $this->valid = $bool;
+            }
+        } else {
+            $this->valid = $bool;
+        }
+    }
+
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | ERRORS
+    |--------------------------------------------------------------------------
+    */
+
+
+
+    private $errors = array();
+
+    public function addError($error)
+    {
+        // add error to array of errors
+        $this->errors[] = $error;
+
+        // set valid to false since if error the DTD cannot be valid
+        $this->valid = false;
+    }
+
 
 
     /**
@@ -84,7 +135,8 @@ class Doctype_Result
      *
      * @var bool
      */
-    private $best_guess = "none";
+    // TODO implement best guess logic
+    //private $best_guess = null;
 
     /**
      * @return string "none" or name of existing doctype
@@ -94,6 +146,10 @@ class Doctype_Result
         return $this->best_guess;
     }
 
+
+
+    private $original = array();
+    // private $number_of_doctypes_found = 0;
 
 
 
