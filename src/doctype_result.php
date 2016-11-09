@@ -141,11 +141,11 @@ class Doctype_Result
     /**
      * @return string "none" or name of existing doctype
      */
-    public function bestGuess()
+/*    public function bestGuess()
     {
         return $this->best_guess;
     }
-
+*/
 
 
     private $original = array();

@@ -6,7 +6,7 @@ namespace Beutnagel;
     | Doctype Validator
     |--------------------------------------------------------------------------
     |
-    | Description of this class....
+    | Validate a doctype to check if it is a valid doctype.
     | Structure of this class
     | - constructor
     | - validate (public)
@@ -77,8 +77,6 @@ class Doctype_Validator
 		//  $subject contains "<"
 		elseif(strpos($subject,"<")>=0) {
 			$result = $this->validateString($subject);
-			//var_dump($result);
-			//die();
 		}
 
 
