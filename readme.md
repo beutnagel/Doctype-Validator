@@ -1,9 +1,24 @@
 #Doctype Validator
-Test to see if an HTML doctype is valid according the W3C specifications.
+Test to see if an HTML doctype is valid according to the W3C specifications.
 
-##Project Page##
+See more at:
 https://beutnagel.github.io/Doctype-Validator/
 
+
+##Installation##
+
+Install with Composer
+
+`$ composer require monolog/monolog`
+
+For the current alpha release
+
+`{
+	"require": {
+        "beutnagel/doctype-validator": "^0.1.1@alpha"
+    },
+    "minimum-stability": "alpha"
+}`
 
 ##When is the DOCTYPE required?
 For HTML documents the DOCTYPE is required.
