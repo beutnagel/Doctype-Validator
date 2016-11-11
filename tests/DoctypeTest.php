@@ -1,9 +1,9 @@
 <?php
 
 namespace Beutnagel;
-use \PHPUnit\Framework\TestCase;
+//use \PHPUnit\Framework\TestCase;
 
-class DoctypeTest extends TestCase
+class DoctypeTest extends \PHPUnit\Framework\TestCase
 {
 	public function testDoctypeValidatorObjectReturned () {
 		$dt = new Doctype_Validator();
