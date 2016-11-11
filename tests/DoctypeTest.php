@@ -1,7 +1,7 @@
 <?php
 
 namespace Beutnagel;
-use PHPUnit\Framework\TestCase;
+use \PHPUnit\Framework\TestCase;
 
 class DoctypeTest extends TestCase
 {
