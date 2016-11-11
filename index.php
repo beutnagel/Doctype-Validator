@@ -36,7 +36,9 @@ ksort($doctypes);
 
 
 	<?php
-
+		$dt = new Doctype_Validator();
+		$result = $dt->validate("<!DOCTYPE html>")->isValid();
+		var_dump($result);die();
 
 	?><!--
 	<pre><!DOCTYPE html></pre>
