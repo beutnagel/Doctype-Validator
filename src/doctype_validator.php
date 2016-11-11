@@ -175,15 +175,22 @@ class Doctype_Validator
 		// transform DTD string into array
 		$dtd_array = $this->dtdToArray($clean_dtd);
 
+        var_dump($dtd_array);
+
 			$analysed_dtd = array();
 
 			// check root element
 			$analysed_dtd["root_element"] = $dtd_array[0];
 
 			// check kind
-			$analysed_dtd["kind"] = $dtd_array[1];
-            // check uppercase kind
-            $this->isUppercase($analysed_dtd["kind"],"kind");
+            if(isset($dtd_array[1])){
+                $analysed_dtd["kind"] = $dtd_array[1];
+                // check uppercase kind
+                $this->isUppercase($analysed_dtd["kind"],"kind");
+
+            } else {
+               $analysed_dtd["kind"] = null; 
+            }
 
 			// Kind is NULL
 			if (is_null($analysed_dtd["kind"])) {
@@ -206,8 +213,13 @@ class Doctype_Validator
             $analysed_dtd["fpi"] = null;
         }
 
-        // check URI
-        $analysed_dtd["uri"] = $dtd_array[3];
+        if(isset($dtd_array[3])) {
+             // check URI
+             $analysed_dtd["uri"] = $dtd_array[3];
+
+        } else {
+            $analysed_dtd["uri"] = null;
+        }
 
         // if more fragments than the max 4 in a valid dtd
         if(count($dtd_array)>4) {
