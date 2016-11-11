@@ -8,7 +8,10 @@
 
 
 <?php
-include_once 'src/doctype_validator.php';
+require_once('src/doctype_validator.php');
+require_once('src/doctype_result.php');
+require_once('src/Doctype_Error.php');
+//include_once 'src/doctype_validator.php';
 use Beutnagel\Doctype_Validator;
 	//Doctype_Validator::register_autoloader();
 $validator = new Doctype_Validator();

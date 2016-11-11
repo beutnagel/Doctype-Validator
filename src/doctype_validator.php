@@ -90,7 +90,7 @@ class Doctype_Validator
 			$result = $this->validateFile($subject);
 		}
 
-		//var_dump($result);return;
+		var_dump($result);//return;
 		return $this->analyse($result);
 	}
 
