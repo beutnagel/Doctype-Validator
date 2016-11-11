@@ -39,13 +39,13 @@ class Doctype_Validator
 
 		echo "validator was initiated";
 		// TODO Move autoloading to Composer???
-		spl_autoload_register(function ($class_name) {
+/*		spl_autoload_register(function ($class_name) {
 			//var_dump(__DIR__."/doctype_result.php");
 			$class_name = str_ireplace("beutnagel\\", "",$class_name);
 			//var_dump($class_name);die();
 			include_once $class_name . '.php';
 		});
-	}
+*/	}
 
 
 
