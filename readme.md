@@ -4,6 +4,7 @@ Test to see if an HTML doctype is valid according to the W3C specifications.
 See more at:
 https://beutnagel.github.io/Doctype-Validator/
 
+![](https://codeship.com/projects/ff65d870-8a55-0134-9eb2-5a7c9acf56e8/status?branch=master)
 
 ##Installation##
 
