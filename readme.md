@@ -14,16 +14,20 @@ Install with Composer
 
 For the current alpha release
 
-`{
+```javascript
+{
 	"require": {
         "beutnagel/doctype-validator": "^0.1.1@alpha"
     },
     "minimum-stability": "alpha"
-}`
+}
+```
 
-##Usage##
-`$dt = new Doctype_Validator();`
-
-`$result = $dt->validate("<!DOCTYPE html>")->isValid();`
-
+##Basic Usage
+```php
+<?php
+  $doctype = "<!DOCTYPE html>";
+  $dt = new Doctype_Validator();
+  $valid = $dt->validate($doctype)->isValid();
+```
 
