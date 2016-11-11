@@ -37,3 +37,9 @@ For the current alpha release
   $valid = $dt->validate($doctype)->isValid();
 ```
 
+### License
+
+Doctype Validator is licensed under the MIT License - see the `LICENSE` file for details
+
+### Author
+Jarne W. Beutnagel - <jarne@beutnagel.dk> - [beutnagel.dk](http://beutnagel.dk)
