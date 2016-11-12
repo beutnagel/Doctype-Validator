@@ -44,7 +44,7 @@ $dtv = new Doctype_Validator();
 $doctype = "<!DOCTYPE html>";
 ```
 
-#### Is it a valid doctype?
+### Is it a valid doctype?
 Checking to see if a doctype is valid.
 
 ```php
@@ -54,7 +54,8 @@ $valid = $dtv->validate($doctype)->isValid();
 
 *@return boolean TRUE or FALSE.*
 
-#### Does it match an official doctype?
+
+### Does it match an official doctype?
 
 A check can be performed with `isMatch()` to see if there is a match.
 
@@ -65,13 +66,16 @@ $match = $dtv->validate($doctype)->isMatch();
 
 
 
+
+
 ```php
 $matches = $dtv->validate($doctype)->matches();
 ```
 
 *@return string of name of match, or NULL if no match.*
 
-#### Errors
+
+### Errors
 If a doctype is not valid, `Doctype_Validator` will try to analyse why it is not valid. A list of errors can be found in `Doctype_Error.php`.
 
 A simple check if a doctype has errors in it can be performed by the `hasError()` function.
@@ -93,16 +97,16 @@ if($result->hasErrors())
 ```
 *@return array of errors.*
 
-#### Fragments
+### Fragments
 The doctype will be dissected into smaller fragments and these can be access with `getFragments()`.
 
 ```php
 $fragments = $dtv->validate($doctype)->getFragments();
 ```
 *@return array of fragmentens*
-### License
+## License
 
 Doctype Validator is licensed under the MIT License - see the `LICENSE` file for details
 
-### Author
+## Author
 Jarne W. Beutnagel - <jarne@beutnagel.dk> - [beutnagel.dk](http://beutnagel.dk)
