@@ -61,9 +61,9 @@ A check can be performed with `isMatch()` to see if there is a match.
 ```php
 $match = $dtv->validate($doctype)->isMatch();
 ```
+*@return boolean TRUE or FALSE*
 
 
-Returns which official doctype it mathces with or NULL if none.
 
 ```php
 $matches = $dtv->validate($doctype)->matches();

@@ -54,6 +54,17 @@ class Doctype_Result
 
     private $fragments = array();
 
+    /**
+     * @return array
+     */
+    public function getFragments()
+    {
+        return $this->fragments;
+    }
+
+
+
+
 
 
 	/**
@@ -64,13 +75,33 @@ class Doctype_Result
 	private $match = null;
 
     /**
-	 * @return boolean
-	 */
-	public function isMatch()
-	{
-		return $this->match;
-	}
+     * @return boolean
+     */
+    public function isMatch()
+    {
+        if(!is_null($this->match)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
+
+    /**
+     * @return string or null
+     */
+    public function matches()
+    {
+        return $this->match;
+    }
+
+    /**
+     * @return string or null
+     */
+    public function getMatch()
+    {
+        return $this->match;
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -127,7 +158,13 @@ class Doctype_Result
         $this->valid = false;
     }
 
-
+    /**
+     * @return array
+     */
+    public function getErrors()
+    {
+        return $this->errors;
+    }
 
     /**
      * If not an exact match for an existing doctype, this is the best
@@ -152,6 +189,16 @@ class Doctype_Result
     // private $number_of_doctypes_found = 0;
 
 
+
+
+
+    /**
+     * @return mixed
+     */
+    public function getOriginal()
+    {
+        return $this->original;
+    }
 
 
 
