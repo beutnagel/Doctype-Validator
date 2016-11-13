@@ -2,3 +2,5 @@
 test/
 output/
 vendor/
+.idea/misc.xml
+.idea/workspace.xml
