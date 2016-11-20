@@ -36,9 +36,13 @@ ksort($doctypes);
 
 
 	<?php
+
+		// fixing github issue#1
+		var_dump($validator->validate('<!DOCTYPE html PUBLIC "ISO/IEC 15445:2000//DTD HyperText Markup Language//EN">'));die();
+
 		$dt = new Doctype_Validator();
-		$result = $dt->validate("<!DOCTYPE html>")->isValid();
-		var_dump($result);die();
+		$result = $dt->validate("<!DOCTYPE html>")->getFragments();
+		//var_dump($result);die();
 
 	?><!--
 	<pre><!DOCTYPE html></pre>
@@ -48,7 +52,7 @@ ksort($doctypes);
 		$result = $validator->validate($dtd);
 		var_export($result);
 
-
+//var_dump($validator->getValidFullDoctypesList());
 	?>
 
 

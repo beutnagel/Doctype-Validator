@@ -22,6 +22,10 @@
         }
 
         private $error_list = array(
+            "No DOCTYPE found" => array(
+                "name"          =>  "No DOCTYPE found",
+                "description"   =>  "It was not possible to find a DOCTYPE of any kind in the source provided",
+            ),
             "Missing keyword DOCTYPE" => array(
                 "name"          =>  "Missing keyword DOCTYPE",
                 "description"   =>  "The keyword DOCTYPE has to be present at the beginning of a doctype",
