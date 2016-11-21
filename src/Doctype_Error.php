@@ -26,14 +26,14 @@
                 "name"          =>  "No DOCTYPE found",
                 "description"   =>  "It was not possible to find a DOCTYPE of any kind in the source provided",
             ),
-            "Missing keyword DOCTYPE" => array(
+/*            "Missing keyword DOCTYPE" => array(
                 "name"          =>  "Missing keyword DOCTYPE",
                 "description"   =>  "The keyword DOCTYPE has to be present at the beginning of a doctype",
-            ),
-            "Wrong case for keyword DOCTYPE" => array(
+            ),*/
+/*            "Wrong case for keyword DOCTYPE" => array(
                 "name"          =>  "Wrong case for keyword DOCTYPE",
                 "description"   =>  "The keyword DOCTYPE has to be in uppercase, i.e. \"DOCTYPE\"",
-            ),
+            ),*/
             "Invalid kind keyword" => array(
                 "name"          =>  "Invalid kind keyword",
                 "description"   =>  "The \"kind\" is invalid. Must be either 'PUBLIC' or 'SYSTEM",
@@ -65,6 +65,14 @@
             "Unknown fragment" => array(
                 "name"          =>  "Unknown fragment",
                 "description"   =>  "This is not a valid part of a dtd",
+            ),
+            "Missing root element" => array(
+                "name"          =>  "Missing root element",
+                "description"   =>  "A root element is the first thing that must be declared, e.g. html",
+            ),
+            "Unknown root element" => array(
+                "name"          =>  "Unknown root element",
+                "description"   =>  "This is not a known root element",
             ),
         );
 

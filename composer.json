@@ -2,7 +2,7 @@
     "name": "beutnagel/doctype-validator",
     "type": "library",
     "description": "Check for valid W3C compliant DOCTYPEs",
-    "keywords": ["doctype","w3c","HTML","validation","validator"],
+    "keywords": ["doctype","w3c","HTML","validation","validator","dtd"],
     "homepage": "https://github.com/beutnagel/Doctype-Validator",
     "license": "MIT",
     "authors": [

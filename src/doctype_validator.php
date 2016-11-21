@@ -337,7 +337,6 @@ class Doctype_Validator
 
         // Take into account ISO HTML dtd which does not have a prefix
         if(stripos($fpi,"ISO")===0) {
-            echo "ISO found";
             // add empty prefix so it also has 4 parts
             $fpi = "//".$fpi;
         }
@@ -382,7 +381,7 @@ class Doctype_Validator
         // check if $lang is a valid ISO 639 language code
         // MUST  be 2 characters long
         if(strlen($lang)!=2) {
-            $this->reportError("Invalid FPI language identifier",$lang);
+            $this->reportError("Invalid length of FPI language identifier",$lang);
             return false;
         }
         // MUST be one of the those defined in $ISO639_lang_codes
@@ -666,10 +665,10 @@ class Doctype_Validator
 
         // check root element
         if(!isset($dtd["root_element"])){
-            echo "missing root element";
+            $this->reportError("Missing root element");
             return false;
         } elseif(strtolower($dtd["root_element"]) != "html" && strtolower($dtd["root_element"]) !="wml") {
-            echo "unkown root element";
+            $this->reportError("Unknown root element",$dtd["root_element"]);
             return false;
         }
 
