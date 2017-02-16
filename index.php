@@ -2,6 +2,11 @@
 <html>
 <head>
 	<title>Doctype Validator</title>
+	<style type="text/css">
+		#validity {color:#fff;}
+		.validity-true {background-color: green;}
+		.validity-false {background-color: red;}
+	</style>
 </head>
 <body>
 <h1>Doctype Validator</h1>
@@ -32,15 +37,35 @@ ksort($doctypes);
 ?>
 	</select>
 </section>
+<section>
+	<form action="/" method="post">
+		<input type="text" name="doctype">
+		<button type="submit">Check Doctype</button>
+	</form>
+</section>
 <section id="test">
 
 
 	<?php
 
+		$dt = new Doctype_Validator();
+
+		if(isset($_POST["doctype"])) {
+			$valid = $dt->isValid($_POST["doctype"]);
+			if($dt->isValid($_POST["doctype"])) {
+				$valid = "true";
+			} else {
+				$valid = "false";
+			}
+		?>
+			<div id="validity" class="validity-<?php echo $valid;?>">Is this doctype valid: <?php echo $valid;?><br>
+			<pre><?php echo htmlentities($_POST["doctype"]);?></pre></div>
+		<?php 		}
+
 		// fixing github issue#1
 		//var_dump($validator->validate('<!DOCTYPE html PUBLIC "ISO/IEC 15445:2000//DTD HyperText Markup Language//EN">'));die();
 
-		$dt = new Doctype_Validator();
+		//var_dump($dt->isValid('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">'));
 		$result = $dt->validate("<!DOCTYPE html>")->getFragments();
 		//var_dump($result);die();
 

@@ -962,7 +962,7 @@ class Doctype_Validator
 			"subset" 		=> null,
 			"quotes"		=> "unknown",
 		],
-		"HTML 2.0 (long form)" => [
+		"(IETF) HTML 2.0 (long form)" => [
 			"root_element" 	=> "html",
 			"kind" 			=> "PUBLIC",
 			"fpi" 			=> "-//IETF//DTD HTML 2.0//EN",
@@ -971,15 +971,144 @@ class Doctype_Validator
 			"subset" 		=> null,
 			"quotes"		=> "unknown",
 		],
-		"HTML 2.0" => [
-			"root_element" 	=> "html",
-			"kind" 			=> "PUBLIC",
-			"fpi" 			=> "-//IETF//DTD HTML//EN",
-			"si" 			=> null,
-			"si_optional"	=> null,
-			"subset" 		=> null,
-			"quotes"		=> "unknown",
-		],
+        "(IETF) HTML 2.0" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//IETF//DTD HTML//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+        "(IETF) HTML 2 Level 2" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//IETF//DTD HTML Level 2//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+        "(IETF) HTML 2.0 Level 2" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//IETF//DTD HTML 2.0 Level 2//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+        "(IETF) HTML 2 Level 1" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//IETF//DTD HTML Level 1//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+        "(IETF) HTML 2.0 Level 1" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//IETF//DTD HTML 2.0 Level 1//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+        "(IETF) HTML 2 Strict" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//IETF//DTD HTML Strict//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+        "(IETF) HTML 2.0 Strict" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//IETF//DTD HTML 2.0 Strict//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+        "(IETF) HTML 2 Strict Level 2" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//IETF//DTD HTML Strict Level 2//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+        "(IETF) HTML 2 Strict Level 1" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//IETF//DTD HTML Strict Level 1//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+        "(IETF) HTML 2.0 Strict Level 1" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//IETF//DTD HTML 2.0 Strict Level 1//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+
+
+
+
+
+        "(IETF) HTML 2.0 + i18n" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//IETF//DTD HTML i18n//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+        "(IETF) HTML 3 Draft" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//IETF//DTD HTML 3.0//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+        "(W3O) HTML 3 Draft" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//W3O//DTD W3 HTML 3.0//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+        "HTML 3.2 Experimental (with support for Style Sheets)" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//W3C//DTD HTML Experimental 970421//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
+
+
+
+
+
+
+
 		"HTML 3.2" => [
 			"root_element" 	=> "html",
 			"kind" 			=> "PUBLIC",
@@ -1007,6 +1136,15 @@ class Doctype_Validator
 			"subset" 		=> null,
 			"quotes"		=> "unknown",
 		],
+        "HTML 3.2 (Final)" => [
+            "root_element"  => "html",
+            "kind"          => "PUBLIC",
+            "fpi"           => "-//W3C//DTD HTML 3.2 Final//EN",
+            "si"            => null,
+            "si_optional"   => null,
+            "subset"        => null,
+            "quotes"        => "unknown",
+        ],
 		"XHTML + MathML + SVG" => [
 			"root_element" 	=> "html",
 			"kind" 			=> "PUBLIC",
@@ -1116,7 +1254,9 @@ class Doctype_Validator
 	}
 
 
-
+public function getValid() {
+    return $this->valid;
+}
 
 
 
@@ -1128,12 +1268,19 @@ class Doctype_Validator
 
     }
 
-    /**
-     * @param $specification
-     * @param $subject
-     */
-    public function isValid($specification,$subject) {
 
+
+    /**
+     * @param $doctype
+     * @return bool
+     */
+    public function isValid($doctype) {
+        $validate = $this->validate($doctype);
+        if($validate->getValid()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 
