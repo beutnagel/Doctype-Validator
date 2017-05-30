@@ -1,14 +1,9 @@
 <?php
 
-$root    = realpath(dirname(dirname(__FILE__)));
+require_once('/sadsvendor/autoload.php');
+require_once('/sadssrc/doctype_validator.php');
+require_once('/sadssrc/doctype_result.php');
+require_once('/sadssrc/Doctype_Error.php');
 
-if (!file_exists($root . '/vendor/autoload.php')) {
-    throw new Exception(
-        'Please run "php composer.phar install --dev" in root directory '
-        . 'to setup unit test dependencies before running the tests'
-    );
-}
-require_once(realpath($root).'/vendor/autoload.php');
-require_once(realpath($root).'/src/doctype_validator.php');
-require_once(realpath($root).'/src/doctype_result.php');
-require_once(realpath($root).'/src/Doctype_Error.php');
+
+//echo __dir__;
