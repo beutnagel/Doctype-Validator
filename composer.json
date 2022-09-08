@@ -10,15 +10,16 @@
             "name": "Jarne W. Beutnagel",
             "email": "jarne@beutnagel.dk",
             "homepage": "http://beutnagel.dk",
-            "role": "Developer"
+            "role": "Developer",
+            "twitter": "https://twitter.com/beutnagel"
         }
     ],
     "require": {
-        "php": ">=7.0",
+        "php": ">=8.0",
         "ext-mbstring": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "9.5"
+        "phpunit/phpunit": ">=9.5"
     },
     "autoload": {
         "psr-4": {
