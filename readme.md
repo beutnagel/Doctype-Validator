@@ -12,6 +12,9 @@ https://beutnagel.github.io/Doctype-Validator/
 [![Reference Status](https://www.versioneye.com/php/beutnagel:doctype-validator/reference_badge.svg)](https://www.versioneye.com/php/beutnagel:doctype-validator/references)
 [![GitHub issues](https://img.shields.io/github/issues/beutnagel/Doctype-Validator.svg)](https://github.com/beutnagel/Doctype-Validator/issues)
 
+![GitHub](https://img.shields.io/github/license/beutnagel/Doctype-Validator)
+
+
 ##Installation##
 
 Install with Composer
